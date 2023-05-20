@@ -53,7 +53,7 @@ SWEP.NPCWeight = 200
 
 SWEP.AccuracyMOA = 6 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 1000
+SWEP.MoveDispersion = 800
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "ak47" -- the magazine pool this gun draws from
@@ -61,7 +61,7 @@ SWEP.MagID = "ak47" -- the magazine pool this gun draws from
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "arccw_go/ak47/ak47_01.wav"
+SWEP.ShootSound = "dka_ak.fire"
 SWEP.ShootSoundSilenced = "arccw_go/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "arccw_go/ak47/ak47-1-distant.wav"
 
@@ -223,6 +223,17 @@ SWEP.Animations = {
     ["idle_inspect"] = false,
     ["exit_inspect"] = false,
 }
+
+sound.Add({
+    name = "dka_ak.fire",
+    channel = 16,
+    volume = 1.0,
+    sound = {
+		"weapons/ak/ak103_fire_01.wav",
+		"weapons/ak/ak103_fire_02.wav",
+		"weapons/ak/ak103_fire_03.wav"
+		},
+})
 
 sound.Add({
     name = "ArcCW_GO_AK47.Draw",
