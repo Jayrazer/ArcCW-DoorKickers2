@@ -52,8 +52,8 @@ SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 200
 
 SWEP.AccuracyMOA = 6 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 750 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 200
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 1000
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "ak47" -- the magazine pool this gun draws from
@@ -162,7 +162,7 @@ SWEP.Attachments = {
     },
 	{
         PrintName = "Specialization",
-        Slot = {""},
+        Slot = {"dka_spec"},
         Bone = "",
         DefaultAttName = "Unspecialized",
         Offset = {
