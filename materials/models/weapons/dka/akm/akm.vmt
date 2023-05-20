@@ -1,0 +1,4 @@
+VertexLitGeneric
+{
+	$basetexture "models/weapons/dka/akm/akm.vtf"
+}
